@@ -1,4 +1,4 @@
-package cn.tedu.shoot;
+﻿package cn.tedu.shoot;
 import java.util.Random;
 
 /** 敌机: 是飞行物，也是敌人 */
@@ -10,6 +10,7 @@ public class Airplane extends FlyingObject implements Enemy {
 		width = image.getWidth();   //宽
 		height = image.getHeight(); //高
 		Random rand = new Random(); //随机数对象
+        System.out.println("*****");
 		x = rand.nextInt(ShootGame.WIDTH-this.width); //x:0到(窗口宽-敌机宽)之内的随机数
 		y = -this.height; //y:负的敌机的高
 	}
